@@ -1,0 +1,12 @@
+const Data = function () {
+
+    /**
+     * 
+     * @description Input fields data
+     * 
+     */
+ email = result = ('teo_' + Math.floor((Math.random()* 1000000) + 1) + '@mailinator.com');                 
+ password = pass = ('Teddy_' + Math.floor((Math.random()* 10)) +10);
+ confpass = conf =('Teddy_' + Math.floor((Math.random()* 10)) +10);   
+}
+module.exports = new Data();
