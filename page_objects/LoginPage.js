@@ -8,7 +8,7 @@ function LoginPage () {
     this.confirmEmailField = element(by.xpath(CONFIRM_EMAIL_FIELD));
     this.passwordField = element(by.xpath(PASSWORD_FIELD));
     this.confirmPassField = element(by.xpath(CONFIRM_PASSWORD_FIELD))
-
+    this.checkBox = element(by.xpath('/html[1]/body[1]/div[7]/div[1]/div[2]/div[4]/div[1]/div[1]/div[1]'));
 /**
  * 
  * @description Function fot the Create Account Flow!!!
@@ -28,8 +28,8 @@ function LoginPage () {
         console.log('Enter Password : Done');
         actions.enterText(this.confirmPassField, confpass)
         console.log('Confirm Password : Done');
-    }
-
-    
+        actions.clickToElement(this.checkBox);
+        console.log('Check Box : Clicked and Checked');
+    } 
 }
 module.exports = new LoginPage();
