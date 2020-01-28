@@ -9,9 +9,15 @@ function LoginPage () {
     this.passwordField = element(by.xpath(PASSWORD_FIELD));
     this.confirmPassField = element(by.xpath(CONFIRM_PASSWORD_FIELD))
     this.checkBox = element(by.xpath('/html[1]/body[1]/div[7]/div[1]/div[2]/div[4]/div[1]/div[1]/div[1]'));
+    this.createAccountSubmitButton = element(by.xpath("//div[@class='ozine-popup create-account']//span[contains(text(),'Crear tu cuenta')]"));
+    this.loginOrbiButton = element(by.xpath("//div[@class='form']//span[contains(text(),'Iniciar sesión')]"));
+    this.emailToLginField = element(by.xpath("/html[1]/body[1]/div[6]/div[1]/div[2]/div[1]/input[1]"));
+    this.passwordToLoginField = element(by.xpath("/html[1]/body[1]/div[6]/div[1]/div[2]/div[2]/input[1]"));
+    this.loginToOrbiButton = element(by.xpath('/html[1]/body[1]/div[6]/div[1]/div[2]/div[4]/div[2]/b[1]/span[1]'));
+    
 /**
  * 
- * @description Function fot the Create Account Flow!!!
+ * @description Function for the Create Account Flow!!!
  * 
  */
 
@@ -28,8 +34,24 @@ function LoginPage () {
         console.log('Enter Password : Done');
         actions.enterText(this.confirmPassField, confpass)
         console.log('Confirm Password : Done');
+        browser.sleep(4000);
         actions.clickToElement(this.checkBox);
+        browser.sleep(4000);
         console.log('Check Box : Clicked and Checked');
-    } 
-}
+        //Just Provisional time sleep
+        actions.clickToElement(this.createAccountButton);
+        //browser.actions().sendKeys(protractor.Key.ENTER).perform();
+        browser.sleep(6000);
+    };
+    
+    this.loginToOrbiNetworkPlattform = () => {
+        actions.clickToElement(this.loginOrbiButton);
+        actions.enterText(this.emailToLginField, 'teo_753487@mailinator.com');
+        browser.sleep(4000);
+        actions.enterText(this.passwordToLoginField, "Teddy_310");
+        browser.sleep(4000);
+        actions.clickToElement(this.loginToOrbiButton);
+        browser.sleep(4000);
+    }
+};
 module.exports = new LoginPage();
