@@ -20,6 +20,9 @@ function LoginPage () {
     this.loginToOrbiButton = element(by.xpath('/html[1]/body[1]/div[6]/div[1]/div[2]/div[4]/div[2]/b[1]/span[1]'));
     this.orbiNetworwLogo = element(by.xpath("//img[@class='logo']"));
     this.toUploadPhoto = element(by.xpath("//button[contains(@class,'btn button outline btnPicture')]"));
+    this.whichIsYourName = element(by.xpath('/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]'));
+    this.whichIsYourLastName = element(by.xpath('/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/input[1]'));
+    this.createYourComapanyButton = element(by.xpath('/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/button[1]'));
     
     
 /**
@@ -64,6 +67,11 @@ function LoginPage () {
         } else {
             console.log("ORBI log is MISSING : Loggin Nor Succesfull");
         };
+
+        actions.enterText(this.whichIsYourName, 'Alfredo');
+        actions.enterText(this.whichIsYourLastName, 'Ibarra');
+        browser.sleep(4000);
+        actions.clickToElement(this.createYourComapanyButton);
 
         browser.sleep(4000);
         //helper.uploadFileIntoInputField(this.toUploadPhoto, this.absolutePath, 4000);
