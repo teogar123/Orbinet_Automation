@@ -3,3 +3,6 @@
 #https://www.protractortest.org/#/
 git clone
 git pull
+git commit -m "Message"
+git push origin master
+"Good to go for CI Ppielines"
