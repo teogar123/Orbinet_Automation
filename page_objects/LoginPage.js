@@ -56,9 +56,9 @@ function LoginPage () {
     
     this.loginToOrbiNetworkPlattform = () => {
         actions.clickToElement(this.loginOrbiButton);
-        actions.enterText(this.emailToLginField, 'teo_753487@mailinator.com');
+        actions.enterText(this.emailToLginField, 'teo_333@mailinator.com');
         browser.sleep(4000);
-        actions.enterText(this.passwordToLoginField, "Teddy_310");
+        actions.enterText(this.passwordToLoginField, "Teddy_333");
         browser.sleep(4000);
         actions.clickToElement(this.loginToOrbiButton);
         browser.sleep(4000);
@@ -68,10 +68,13 @@ function LoginPage () {
             console.log("ORBI log is MISSING : Loggin Nor Succesfull");
         };
 
+        actions.clearElementText(this.whichIsYourName);
+        browser.sleep(2000);
         actions.enterText(this.whichIsYourName, 'Alfredo');
+        actions.clearElementText(this.whichIsYourLastName);
         actions.enterText(this.whichIsYourLastName, 'Ibarra');
         browser.sleep(4000);
-        actions.clickToElement(this.createYourComapanyButton);
+        
 
         browser.sleep(4000);
         //helper.uploadFileIntoInputField(this.toUploadPhoto, this.absolutePath, 4000);
@@ -89,7 +92,8 @@ function LoginPage () {
             console.log('The Element is Not Diplayed and Will Allow to Upload the require file -> : Failed');
         }
         protractorHelper.uploadFileIntoInputField(fileInputField, absolutePathOfFileToUpload);
-        browser.sleep(6000);     
+        browser.sleep(6000);
+        actions.clickToElement(this.createYourComapanyButton);     
     }
 };
 module.exports = new LoginPage();
