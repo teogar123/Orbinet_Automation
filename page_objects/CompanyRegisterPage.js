@@ -13,20 +13,31 @@ function CompanyRegisterPage () {
     this.stateField = element(by.xpath("//select[@id='state']"));
     this.cityField = element(by.xpath("//select[@id='city']"));
     this.addressField = element(by.xpath("//input[@name='address']"));
-    this.companyTypeField = element(by.xpath("//div[@class='companies']//div[2]//img[1]"));
+    this.companyTypeButton = element(by.xpath("//b[contains(text(),'Transportista')]"));
+    this.nextButton = element(by.xpath("//button[contains(@class,'btn primary')]"));
+    this.selectYourState = element(by.xpath("//select[@id='state']"));
+    this.selectYourCity = element(by.xpath("//select[@id='city']"));
 
 
     this.companyRegister = () => {
         actions.enterText(this.companyNameField, "Trucking Docks");
         actions.enterText(this.companyIdField, "Trucking_Docks");
-        actions.enterText(this.companyWebPageField, "https://trucking_docks.com");
-        actions.enterText(this.countryField, "Mexico");
+        actions.enterText(this.companyWebPageField, "www.trucks.com");
+        //actions.enterText(this.countryField, "Mexico");
         actions.enterText(this.postalCodeField, "44560");
         actions.enterText(this.companyIdField, "3313344334");
         actions.enterText(this.stateField, "Jalisco");
         actions.enterText(this.cityField, "Guadalajara");
+        actions.enterText(this.selectYourState, 'Aguas');
+        browser.sleep(2000);
+        actions.enterText(this.selectYourCity, 'Aguas');
+        browser.sleep(4000)
         actions.enterText(this.addressField, "Rio Churubusco 344");
-        actions.clickToElement(this.companyTypeField);
+        actions.clickToElement(this.companyTypeButton);
+        browser.sleep(4000)
+        actions.clickToElement(this.nextButton);
+        browser.sleep(7000)
+
     }
 
 }

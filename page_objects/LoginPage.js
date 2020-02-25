@@ -14,10 +14,10 @@ function LoginPage () {
     this.confirmPassField = element(by.xpath(CONFIRM_PASSWORD_FIELD))
     this.checkBox = element(by.xpath('/html[1]/body[1]/div[7]/div[1]/div[2]/div[4]/div[1]/div[1]/div[1]'));
     this.createAccountSubmitButton = element(by.xpath("//div[@class='ozine-popup create-account']//span[contains(text(),'Crear tu cuenta')]"));
-    this.loginOrbiButton = element(by.xpath("//div[@class='form']//span[contains(text(),'Iniciar sesión')]"));
-    this.emailToLginField = element(by.xpath("/html[1]/body[1]/div[6]/div[1]/div[2]/div[1]/input[1]"));
-    this.passwordToLoginField = element(by.xpath("/html[1]/body[1]/div[6]/div[1]/div[2]/div[2]/input[1]"));
-    this.loginToOrbiButton = element(by.xpath('/html[1]/body[1]/div[6]/div[1]/div[2]/div[4]/div[2]/b[1]/span[1]'));
+    this.loginOrbiButton = element(by.xpath("//button[contains(@class,'btn primary')]"));
+    this.emailToLginField = element(by.xpath("//input[@name='email']"));
+    this.passwordToLoginField = element(by.xpath("//input[@name='password']"));
+    this.loginToOrbiButton = element(by.xpath("//div[@class='button-container']//button[text()='Iniciar sesión']"));
     this.orbiNetworwLogo = element(by.xpath("//img[@class='logo']"));
     this.toUploadPhoto = element(by.xpath("//button[contains(@class,'btn button outline btnPicture')]"));
     this.whichIsYourName = element(by.xpath('/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]'));

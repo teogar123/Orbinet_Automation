@@ -10,7 +10,6 @@ exports.config = {
              
             prefs: {
                 'profile.managed_default_content_settings.notifications': 1,
-                args: ["--headless", "--disable-gpu", "--window-size=800x600"]
             }
         }
     },
