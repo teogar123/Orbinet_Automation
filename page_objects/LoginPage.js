@@ -12,17 +12,17 @@ function LoginPage () {
     this.confirmEmailField = element(by.xpath(CONFIRM_EMAIL_FIELD));
     this.passwordField = element(by.xpath(PASSWORD_FIELD));
     this.confirmPassField = element(by.xpath(CONFIRM_PASSWORD_FIELD))
-    this.checkBox = element(by.xpath('/html[1]/body[1]/div[7]/div[1]/div[2]/div[4]/div[1]/div[1]/div[1]'));
-    this.createAccountSubmitButton = element(by.xpath("//div[@class='ozine-popup create-account']//span[contains(text(),'Crear tu cuenta')]"));
-    this.loginOrbiButton = element(by.xpath("//button[contains(@class,'btn primary')]"));
-    this.emailToLginField = element(by.xpath("//input[@name='email']"));
-    this.passwordToLoginField = element(by.xpath("//input[@name='password']"));
-    this.loginToOrbiButton = element(by.xpath("//div[@class='button-container']//button[text()='Iniciar sesión']"));
-    this.orbiNetworwLogo = element(by.xpath("//img[@class='logo']"));
-    this.toUploadPhoto = element(by.xpath("//button[contains(@class,'btn button outline btnPicture')]"));
-    this.whichIsYourName = element(by.xpath('/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]'));
-    this.whichIsYourLastName = element(by.xpath('/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/input[1]'));
-    this.createYourComapanyButton = element(by.xpath('/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/button[1]'));
+    this.checkBox = element(by.xpath(CREATE_ACCOUNT_CHECKBOX));
+    this.createAccountSubmitButton = element(by.xpath(CREATE_ACCOUNT_SUBMIT_BUTTON));
+    this.loginOrbiButton = element(by.xpath(LOGIN_ORBI_BUTTON));
+    this.emailToLginField = element(by.xpath(EMAIL_TO_LOGIN_FIELD));
+    this.passwordToLoginField = element(by.xpath(PASSWORD_TO_LOGIN_FIELD));
+    this.loginToOrbiButton = element(by.xpath(LOGIN_TO_ORBI_BUTTON));
+    this.orbiNetworwLogo = element(by.xpath(ORBINETWORK_LOGO));
+    this.toUploadPhoto = element(by.xpath(TO_UPLOAD_FOTO));
+    this.whichIsYourName = element(by.xpath(WHICH_IS_YOUR_NAME_FIELD));
+    this.whichIsYourLastName = element(by.xpath(WHICH_IS_YOUR_LASTNAME_FIELD));
+    this.createYourComapanyButton = element(by.xpath(CREATE_YOUR_COMPANY_BUTTON));
     
     
 /**

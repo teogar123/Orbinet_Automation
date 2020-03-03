@@ -15,8 +15,8 @@ beforeAll( function () {
 
 describe('Login to OrbinetWork And Register', function (){
     it('Test Start', function () {
-        //loginPage.createAccountFlow();
-        loginPage.loginToOrbiNetworkPlattform();
-        companyRegisterPage.companyRegister(); 
+        loginPage.createAccountFlow();
+        //loginPage.loginToOrbiNetworkPlattform();
+        //companyRegisterPage.companyRegister(); 
     })
 })
