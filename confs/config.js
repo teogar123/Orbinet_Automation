@@ -15,8 +15,7 @@ exports.config = {
     },
     specs: [
        
-        //'../test/SearchProductsAndAddToCart.js',
-        '../test/addToCartMultipleItemsTest.js'
+        '../tests/LoginTest.js'
         
 ],
 
