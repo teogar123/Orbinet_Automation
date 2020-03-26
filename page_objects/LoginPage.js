@@ -68,17 +68,19 @@ function LoginPage () {
             console.log("ORBI log is MISSING : Loggin Nor Succesfull");
         };
 
+        /*
         actions.clearElementText(this.whichIsYourName);
         browser.sleep(2000);
         actions.enterText(this.whichIsYourName, 'Alfredo');
         actions.clearElementText(this.whichIsYourLastName);
         actions.enterText(this.whichIsYourLastName, 'Ibarra');
         browser.sleep(4000);
-        
+        **/
 
-        browser.sleep(4000);
+        //browser.sleep(4000);
         //helper.uploadFileIntoInputField(this.toUploadPhoto, this.absolutePath, 4000);
         
+        /*
         const relativePathOfFileToUpload = "../page_obnjects/photo.png";
         const absolutePathOfFileToUpload = path.resolve(__dirname, relativePathOfFileToUpload);
 
@@ -93,7 +95,8 @@ function LoginPage () {
         }
         protractorHelper.uploadFileIntoInputField(fileInputField, absolutePathOfFileToUpload);
         browser.sleep(6000);
-        actions.clickToElement(this.createYourComapanyButton);     
+        actions.clickToElement(this.createYourComapanyButton);    
+        **/ 
     }
 };
 module.exports = new LoginPage();
