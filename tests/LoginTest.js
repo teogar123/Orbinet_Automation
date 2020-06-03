@@ -13,7 +13,7 @@ beforeAll( function () {
     page.openUrl();
 });
 
-describe('Login to OrbinetWork And Register', function (){
+describe('Full Regression Cont, Flotillas etc.', function (){
     it('Test Start', function () {
         //loginPage.createAccountFlow();
         loginPage.loginToOrbiNetworkPlattform();

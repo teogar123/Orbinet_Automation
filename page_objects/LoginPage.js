@@ -1,4 +1,4 @@
-const locators = require('../locators/Locators')
+const locators = require('../locators/Locators');
 const actions = require('../base/Actions');
 const data = require('../test_data/Data');
 const protractorHelper = require('protractor-helper');
@@ -56,9 +56,9 @@ function LoginPage () {
     
     this.loginToOrbiNetworkPlattform = () => {
         actions.clickToElement(this.loginOrbiButton);
-        actions.enterText(this.emailToLginField, 'teo_333@mailinator.com');
+        actions.enterText(this.emailToLginField, 'teogar123@gmail.com');
         browser.sleep(4000);
-        actions.enterText(this.passwordToLoginField, "Teddy_333");
+        actions.enterText(this.passwordToLoginField, "Teddy@810316");
         browser.sleep(4000);
         actions.clickToElement(this.loginToOrbiButton);
         browser.sleep(4000);

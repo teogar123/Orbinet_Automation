@@ -28,7 +28,8 @@ function UserProfilePage () {
         }
         browser.sleep(3000);
         
-        const arrayElements = [this.permisosTab, this.alertasTab, this.notificacionesTab];
+        const arrayElements = [this.permisosTab,
+             this.alertasTab, this.notificacionesTab];
         console.log(arrayElements.length)
         arrayElements.forEach(function(arrayElement){
             actions.clickToElement(arrayElement);
