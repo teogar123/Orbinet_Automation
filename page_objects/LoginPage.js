@@ -68,14 +68,14 @@ function LoginPage () {
             console.log("ORBI log is MISSING : Loggin Nor Succesfull");
         };
 
-        /*
+        
         actions.clearElementText(this.whichIsYourName);
         browser.sleep(2000);
         actions.enterText(this.whichIsYourName, 'Alfredo');
         actions.clearElementText(this.whichIsYourLastName);
         actions.enterText(this.whichIsYourLastName, 'Ibarra');
         browser.sleep(4000);
-        **/
+        
 
         //browser.sleep(4000);
         //helper.uploadFileIntoInputField(this.toUploadPhoto, this.absolutePath, 4000);
