@@ -16,7 +16,10 @@ exports.config = {
     },
     specs: [
        
+        '../tests/LoginTest.js',
+        '../tests/LoginTest.js',
         '../tests/LoginTest.js'
+        
         
 ],
 
