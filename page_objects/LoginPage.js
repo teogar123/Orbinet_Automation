@@ -56,7 +56,7 @@ function LoginPage () {
     
     this.loginToOrbiNetworkPlattform = () => {
         actions.clickToElement(this.loginOrbiButton);
-        actions.enterText(this.emailToLginField, 'teogar123@gmail.com');
+        actions.enterText(this.emailToLginField, 'teddy_123@mailinator.com');
         browser.sleep(4000);
         actions.enterText(this.passwordToLoginField, "Teddy@810316");
         browser.sleep(4000);
