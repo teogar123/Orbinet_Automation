@@ -34,6 +34,10 @@ exports.config = {
     onPrepare: function() {
     var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
     jasmine.getEnv().addReporter(new SpecReporter({displayStacktrace: 'all'}));
+    var AllureReporter = require('jasmine-allure-reporter');
+    jasmine.getEnv().addReporter(new AllureReporter({
+      resultsDir: 'allure-results'
+    }));
     
         browser.ignoreSynchronization = true
         setTimeout(function() {
