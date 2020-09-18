@@ -22,7 +22,7 @@ describe('Full Regression Cont, Flotillas etc.', function (){
     })
 })
 
-describe('Traffic Functional Test Case', function (){
+/**  describe('Traffic Functional Test Case', function (){
     it('Test Start', function () {
         //loginPage.createAccountFlow();
         loginPage.loginToOrbiNetworkPlattform();
@@ -39,3 +39,4 @@ describe('Maps and Zones', function (){
         //companyRegisterPage.companyRegister(); 
     })
 })
+*/
