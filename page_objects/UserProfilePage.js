@@ -4,7 +4,7 @@ const data = require('../test_data/Data');
 
 
 function UserProfilePage () {
-    this.userProfileButton = element(by.xpath("//img[@class='user-avatar']"))
+    this.userProfileButton = element(by.xpath('//*[@class="user-avatar"]'));
     this.permisosTab = element(by.xpath("//span[@id='permisos']"));
     this.alertasTab = element(by.xpath("//span[@id='permisos']"));
     this.notificacionesTab =element(by.xpath("//span[@id='notificaciones']"));

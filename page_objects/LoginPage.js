@@ -69,7 +69,7 @@ function LoginPage () {
         };
 
         
-        actions.clearElementText(this.whichIsYourName);
+        /*actions.clearElementText(this.whichIsYourName);
         browser.sleep(2000);
         actions.enterText(this.whichIsYourName, 'Alfredo');
         actions.clearElementText(this.whichIsYourLastName);

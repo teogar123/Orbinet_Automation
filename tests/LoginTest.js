@@ -22,20 +22,6 @@ describe('Full Regression Cont, Flotillas etc.', function (){
     })
 })
 
-describe('Traffic Functional Test Case', function (){
-    it('Test Start', function () {
-        //loginPage.createAccountFlow();
-        loginPage.loginToOrbiNetworkPlattform();
-        userProfilePage.manageProfileFLow();
-        //companyRegisterPage.companyRegister(); 
-    })
-})
 
-describe('Maps and Zones', function (){
-    it('Test Start', function () {
-        //loginPage.createAccountFlow();
-        loginPage.loginToOrbiNetworkPlattform();
-        userProfilePage.manageProfileFLow();
-        //companyRegisterPage.companyRegister(); 
-    })
-})
+
+
