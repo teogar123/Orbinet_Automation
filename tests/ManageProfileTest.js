@@ -21,9 +21,3 @@ describe('Full Regression Cont, Flotillas etc.', function (){
         //companyRegisterPage.companyRegister(); 
     })
 })
-
-
-
-
-
-
