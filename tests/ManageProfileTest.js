@@ -5,7 +5,7 @@ const userProfilePage = require('../page_objects/UserProfilePage');
 
 /**
  * 
- * @description Login to Orbinetwork Platform in Production Environment!!!
+ * @description Manage Profile to select Permissions, Allerts and Notifications!!!
  * 
  */
 
@@ -13,7 +13,7 @@ beforeAll( function () {
     page.openUrl();
 });
 
-describe('Full Regression Cont, Flotillas etc.', function (){
+describe('Manage Profile Test', function (){
     it('Test Start', function () {
         //loginPage.createAccountFlow();
         loginPage.loginToOrbiNetworkPlattform();

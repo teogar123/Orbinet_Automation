@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600810564099' stop='1600810587354'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600811038485' stop='1600811061775'>
     <name>Full Regression Cont, Flotillas etc.</name>
     <title>Full Regression Cont, Flotillas etc.</title>
     <test-cases>
-        <test-case start='1600810564099' status='passed' stop='1600810587354'>
+        <test-case start='1600811038485' status='passed' stop='1600811061775'>
             <name>Test Start</name>
             <title>Test Start</title>
             <labels/>
