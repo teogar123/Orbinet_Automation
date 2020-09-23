@@ -21,3 +21,9 @@ describe('Manage Profile Test', function (){
         //companyRegisterPage.companyRegister(); 
     })
 })
+
+describe('Create Facility Test', function (){
+    it('Test Start' , function () {
+        userProfilePage.createFacility();
+    })
+})
