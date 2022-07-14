@@ -76,8 +76,6 @@ function UserProfilePage () {
                 console.log('The Register Title is not Present : Please Check with dev Team About the Issu');
             }
         })
-        
-
     };
 
 }

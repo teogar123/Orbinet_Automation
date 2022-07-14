@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653082078549' stop='1653082078552'>
+    <name>Insert Origin and Arrival data and Invert the Routes Values</name>
+    <title>Insert Origin and Arrival data and Invert the Routes Values</title>
+    <test-cases>
+        <test-case start='1653082078550' status='failed' stop='1653082078552'>
+            <name>Test Start</name>
+            <title>Test Start</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>NoSuchWindowError: no such window: window was already closed
+                  (Session info: chrome=101.0.4951.64)
+                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+                System info: host: 'Teddys-MacBook-Pro.local', ip: '2806:261:417:11c7:3136:deaf:7897:cce2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+                Driver info: driver.version: unknown</message>
+                <stack-trace>NoSuchWindowError: no such window: window was already closed
+                  (Session info: chrome=101.0.4951.64)
+                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+                System info: host: 'Teddys-MacBook-Pro.local', ip: '2806:261:417:11c7:3136:deaf:7897:cce2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+                Driver info: driver.version: unknown
+                    at Object.checkLegacyResponse (/opt/homebrew/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)
+                    at parseHttpResponse (/opt/homebrew/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)
+                    at /opt/homebrew/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                From: Task: WebDriver.manage().window().setSize(1920, 1055)
+                    at thenableWebDriverProxy.schedule (/opt/homebrew/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+                    at Window.setSize (/opt/homebrew/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:1672:25)
+                    at /Users/teddygarcia/Orbinet_Automation/confs/config.js:50:50
+                    at ManagedPromise.invokeCallback_ (/opt/homebrew/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/opt/homebrew/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/opt/homebrew/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at /opt/homebrew/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27
+                    at /opt/homebrew/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

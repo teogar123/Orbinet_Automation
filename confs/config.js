@@ -8,19 +8,16 @@ exports.config = {
         shardTestFiles: true,
         maxInstances: 1,
         chromeOptions: {
-             
+              
             prefs: {
                 'profile.managed_default_content_settings.notifications': 1,
             }
         }
     },
     specs: [
-       
+        
         '../tests/LoginTest.js',
-        '../tests/ManageProfileTest.js'
-        
-        
-        
+
 ],
 
     // Set the Url where browser will start.

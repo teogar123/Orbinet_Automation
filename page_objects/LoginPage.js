@@ -3,10 +3,15 @@ const actions = require('../base/Actions');
 const data = require('../test_data/Data');
 const protractorHelper = require('protractor-helper');
 const path = require('path');
+const { element } = require('protractor');
+const { waitForElementNotToBePresent, waitForElementPresence } = require('protractor-helper');
+const apiResource = require("protractor-api-resource").ProtractorApiResource;
+const Data = require('../test_data/Data');
 
 
 
 function LoginPage () {
+    
     this.createAccountButton = element(by.xpath(CREATE_ACCOUNT_BUTTON));
     this.emailField = element(by.xpath(EMAIL_FIELD));
     this.confirmEmailField = element(by.xpath(CONFIRM_EMAIL_FIELD));
@@ -23,6 +28,9 @@ function LoginPage () {
     this.whichIsYourName = element(by.xpath(WHICH_IS_YOUR_NAME_FIELD));
     this.whichIsYourLastName = element(by.xpath(WHICH_IS_YOUR_LASTNAME_FIELD));
     this.createYourComapanyButton = element(by.xpath(CREATE_YOUR_COMPANY_BUTTON));
+    this.selectTucsonCompany = element(by.xpath('//*[@id="pageContent"]/div/div/div[3]/div[4]/img'));
+    this.optionsGearLogoToCreateACompany = element(by.xpath('//*[@id="pageContent"]/div/div/div[2]/div/div[1]'));
+
     
     
 /**
@@ -31,7 +39,7 @@ function LoginPage () {
  * 
  */
 
-    this.createAccountFlow = () => {
+    /*this.createAccountFlow = () => {
         actions.isElementDisplayed(this.createAccountButton);
         console.log('Create Account Button Is displayed')
         actions.clickToElement(this.createAccountButton);
@@ -52,51 +60,21 @@ function LoginPage () {
         actions.clickToElement(this.createAccountButton);
         //browser.actions().sendKeys(protractor.Key.ENTER).perform();
         browser.sleep(6000);
-    };
+    };*/
     
     this.loginToOrbiNetworkPlattform = () => {
         actions.clickToElement(this.loginOrbiButton);
         actions.enterText(this.emailToLginField, 'teo_123@mailinator.com');
-        browser.sleep(4000);
         actions.enterText(this.passwordToLoginField, "Teddy@810316");
-        browser.sleep(4000);
         actions.clickToElement(this.loginToOrbiButton);
-        browser.sleep(4000);
+        browser.sleep(2000);
         if (this.orbiNetworwLogo.isDisplayed) {
             console.log('The ORBI logo is Present-> ' + "Loggin : Successfull");
         } else {
             console.log("ORBI log is MISSING : Loggin Nor Succesfull");
-        };
+        };      
+    };
+    
 
-        
-        /*actions.clearElementText(this.whichIsYourName);
-        browser.sleep(2000);
-        actions.enterText(this.whichIsYourName, 'Alfredo');
-        actions.clearElementText(this.whichIsYourLastName);
-        actions.enterText(this.whichIsYourLastName, 'Ibarra');
-        browser.sleep(4000);
-        
-
-        //browser.sleep(4000);
-        //helper.uploadFileIntoInputField(this.toUploadPhoto, this.absolutePath, 4000);
-        
-        /*
-        const relativePathOfFileToUpload = "../page_obnjects/photo.png";
-        const absolutePathOfFileToUpload = path.resolve(__dirname, relativePathOfFileToUpload);
-
-        browser.get("https://qa.v2.orbinetwork.com/register/account");
-
-        const fileInputField = element
-        (by.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]/button[1]"));
-        if (fileInputField.isDisplayed) {
-            console.log('The Element is present and Will Allow to Upload the require File -> : Success');
-        } else {
-            console.log('The Element is Not Diplayed and Will Allow to Upload the require file -> : Failed');
-        }
-        protractorHelper.uploadFileIntoInputField(fileInputField, absolutePathOfFileToUpload);
-        browser.sleep(6000);
-        actions.clickToElement(this.createYourComapanyButton);    
-        **/ 
-    }
 };
 module.exports = new LoginPage();

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1647554900731' stop='1647554906702'>
+    <name>Full Regression Cont, Flotillas etc.</name>
+    <title>Full Regression Cont, Flotillas etc.</title>
+    <test-cases>
+        <test-case start='1647554900732' status='passed' stop='1647554906701'>
+            <name>Test Start</name>
+            <title>Test Start</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

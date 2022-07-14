@@ -11,7 +11,7 @@ CONFIRM_EMAIL_FIELD = "//input[@name='confirmEmail']"
 PASSWORD_FIELD = "//input[@name='password']"
 CONFIRM_PASSWORD_FIELD = "//input[@name='confirmPassword']"
 CREATE_ACCOUNT_CHECKBOX = "//span[@class='checkmark']"
-CREATE_ACCOUNT_SUBMIT_BUTTON = "//div[@class='ozine-popup create-account']//span[contains(text(),'Crear tu cuenta')]"
+CREATE_ACCOUNT_SUBMIT_BUTTON = "//div[@class='ozine-popup create-account']//span[contains(text(),'Crear tu cuenta')]"    
 /**
  * 
  * @description Locators to login to Orbinetwork platform***!

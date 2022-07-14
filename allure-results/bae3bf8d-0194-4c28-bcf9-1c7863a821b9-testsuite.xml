@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1654538565418' stop='1654538566338'>
+    <name>Insert Origin and Arrival data and Invert the Routes Values</name>
+    <title>Insert Origin and Arrival data and Invert the Routes Values</title>
+    <test-cases>
+        <test-case start='1654538565419' status='passed' stop='1654538566338'>
+            <name>Test Start</name>
+            <title>Test Start</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1646435987189' stop='1646435989127'>
+    <name>API POST Request</name>
+    <title>API POST Request</title>
+    <test-cases>
+        <test-case start='1646435987189' status='passed' stop='1646435989126'>
+            <name>Post Request Test</name>
+            <title>Post Request Test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
